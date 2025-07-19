@@ -3,7 +3,7 @@ import { onSnapshot, doc } from "firebase/firestore";
 import { db } from "@/lib/firebase";
 import { THEMES, ThemeKey } from "@/lib/themes";
 
-const SITE_KEY = "yotteya";
+const SITE_KEY = "test03";
 
 type ThemeValue = (typeof THEMES)[ThemeKey];
 

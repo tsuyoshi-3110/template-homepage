@@ -13,7 +13,7 @@ import {
 import { doc, updateDoc, deleteField } from "firebase/firestore";
 import { FirebaseError } from "firebase/app";
 
-const SITE_KEY = "yotteya";
+const SITE_KEY = "test03";
 
 export default function HeaderLogoPicker({
   onSelectFile,

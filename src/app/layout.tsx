@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     title: "甘味処 よって屋｜ふんわり生地のクレープ専門店",
     description:
       "ふんわり生地とこだわりクリームが自慢のクレープ屋さん。大阪市〇〇区で営業中。",
-    url: "https://yotteya-homepage.vercel.app/",
+    url: "https://test03-homepage.vercel.app/",
     siteName: "甘味処 よって屋",
     images: [
       {
@@ -60,6 +60,10 @@ export default function RootLayout({
         <meta
           name="google-site-verification"
           content="h2O77asgMDfUmHBb7dda53OOJdsxv9GKXd5rrRgIQ-k"
+        />
+        <meta
+          name="google-site-verification"
+          content="b2le0w60OVwzkCTsr2nc9z3Mdh5_MlfiFUQfsQXHo1w"
         />
       </head>
 

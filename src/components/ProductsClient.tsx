@@ -49,7 +49,7 @@ import { type Product } from "@/types/Product";
 
 type MediaType = "image" | "video";
 
-const SITE_KEY = "yotteya";
+const SITE_KEY = "test03";
 
 export default function ProductsClient() {
   const [list, setList] = useState<Product[]>([]);

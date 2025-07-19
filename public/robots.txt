@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://yotteya.shop
+Host: https://test03.shop
 
 # Sitemaps
-Sitemap: https://yotteya.shop/sitemap.xml
+Sitemap: https://test03.shop/sitemap.xml

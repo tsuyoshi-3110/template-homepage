@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { doc, getDoc, setDoc } from "firebase/firestore";
 import { db } from "@/lib/firebase";
 
-const SITE_KEY = "yotteya";
+const SITE_KEY = "test03";
 
 export function usePhoneNumber() {
   const [phone, setPhone] = useState<string | null>(null);

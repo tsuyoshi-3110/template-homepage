@@ -22,9 +22,9 @@ export default function AboutClient() {
 
   const nonEmptyKeywords = keywords.filter((k) => k.trim() !== "");
 
-    const gradient = useThemeGradient()
+  const gradient = useThemeGradient();
   /* ここだけ変えれば他サイトにも流用できます */
-  const SITE_KEY = "yotteya";
+  const SITE_KEY = "test03";
 
   /* 4 セグメント = ドキュメント参照
    sitePages / {siteId} / pages / about */
@@ -53,10 +53,9 @@ export default function AboutClient() {
     setKeywords(["", "", ""]);
     alert("保存しました！");
     setSubmitFlag(false);
-
   };
 
-   if (!gradient) return <CardSpinner />;
+  if (!gradient) return <CardSpinner />;
 
   return (
     <main className="max-w-3xl mx-auto ">
@@ -89,7 +88,7 @@ export default function AboutClient() {
             </li>
             <li>
               <a
-                href="https://higashiyodogawaku.goguynet.jp/2024/11/06/yotteya/"
+                href="https://higashiyodogawaku.goguynet.jp/2024/11/06/test03/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-600 underline hover:text-blue-800"

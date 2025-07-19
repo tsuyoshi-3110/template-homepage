@@ -11,7 +11,7 @@ export default function WallpaperUploader() {
   const [file, setFile] = useState<File | null>(null);
   const [isAdmin, setIsAdmin] = useState(false);
 
-  const SITE_KEY = "yotteya";
+  const SITE_KEY = "test03";
 
   useEffect(() => {
     const unsub = onAuthStateChanged(auth, (user) => setIsAdmin(!!user));

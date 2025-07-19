@@ -8,7 +8,7 @@ import { ThemeKey, THEMES } from "@/lib/themes";
 import clsx from "clsx";
 import { AsYouType, parsePhoneNumberFromString } from "libphonenumber-js";
 
-const SITE_KEY = "yotteya";
+const SITE_KEY = "test03";
 
 export function PhoneSection() {
   const [phone, setPhone] = useState<string | null>(null);

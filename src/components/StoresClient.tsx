@@ -49,7 +49,7 @@ import {
 import { CSS } from "@dnd-kit/utilities";
 import { writeBatch } from "firebase/firestore";
 
-const SITE_KEY = "yotteya";
+const SITE_KEY = "test03";
 const STORE_COL = `siteStores/${SITE_KEY}/items`;
 const STORAGE_PATH = `stores/public/${SITE_KEY}`;
 

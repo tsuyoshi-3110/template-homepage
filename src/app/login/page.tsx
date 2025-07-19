@@ -20,7 +20,7 @@ import ChangePassword from "@/components/ChangePassword";
 import ForgotEmail from "@/components/ForgotEmail";
 import PasswordInput from "@/components/PasswordInput";
 
-const SITE_KEY = "yotteya"; // ← サイトごとに変更可
+const SITE_KEY = "test03"; // ← サイトごとに変更可
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");
@@ -31,7 +31,6 @@ export default function LoginPage() {
   const [showForgotPassword, setShowForgotPassword] = useState(false);
   const [showChangePassword, setShowChangePassword] = useState(false);
   const [showForgotEmail, setShowForgotEmail] = useState(false);
-
 
   useEffect(() => {
     const unsub = onAuthStateChanged(auth, async (firebaseUser) => {

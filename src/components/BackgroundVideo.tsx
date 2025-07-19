@@ -20,8 +20,9 @@ import ThemeWallpaper from "./ThemeWallpaper";
 import HeaderLogoPicker from "./HeaderLogoPicker";
 import Slideshow from "./Slideshow";
 import CrepeLoader from "./CrepeLoader";
+import CheckoutButton from "./CheckoutButton";
 
-const SITE_KEY = "yotteya";
+const SITE_KEY = "test03";
 const META_REF = doc(db, "siteSettingsEditable", SITE_KEY);
 const POSTER_EXT = ".jpg";
 
@@ -45,8 +46,39 @@ export default function BackgroundMedia() {
   const [progress, setProgress] = useState<number | null>(null);
   const [theme, setTheme] = useState<ThemeKey>("brandA");
   const [imageUrls, setImageUrls] = useState<string[]>([]);
+  const [status, setStatus] = useState<"loading" | "paid" | "unpaid">(
+    "loading"
+  );
 
   const uploading = progress !== null;
+
+  useEffect(() => {
+    const checkPayment = async () => {
+      try {
+        const urlParams = new URLSearchParams(window.location.search);
+        const sessionId = urlParams.get("session_id");
+
+        const res = await fetch(
+          sessionId
+            ? `/api/verify-subscription?session_id=${sessionId}`
+            : `/api/check-subscription?siteKey=${SITE_KEY}` // ← ここ！
+        );
+
+        const json = await res.json();
+        setStatus(json.active ? "paid" : "unpaid");
+
+        if (sessionId) {
+          const url = new URL(window.location.href);
+          url.searchParams.delete("session_id");
+          window.history.replaceState({}, "", url.toString());
+        }
+      } catch {
+        setStatus("unpaid");
+      }
+    };
+
+    checkPayment();
+  }, []);
 
   const loading =
     (type === "video" && !ready && !!url) ||
@@ -353,6 +385,17 @@ export default function BackgroundMedia() {
       }
     );
   };
+
+  if (status === "unpaid") {
+    return (
+      <div className="fixed inset-0 bg-black text-white flex flex-col items-center justify-center z-50">
+        <p className="text-lg mb-4">
+          このページを表示するにはサブスクリプションが必要です。
+        </p>
+        <CheckoutButton siteKey={SITE_KEY} />
+      </div>
+    );
+  }
 
   return (
     <div className="fixed inset-0 top-12">

@@ -24,7 +24,7 @@ type HeaderProps = {
 const SNS = [
   {
     name: "Instagram",
-    href: "https://www.instagram.com/yotteya.crape/",
+    href: "https://www.instagram.com/test03.crape/",
     icon: Instagram,
   },
 ];
@@ -63,7 +63,7 @@ export default function Header({ className = "" }: HeaderProps) {
             className="w-12 h-12 object-contain transition-opacity duration-200"
           />
         )}
-        甘味処 よって屋
+        甘味処 test03屋
       </Link>
 
       <nav className="flex gap-4 ml-auto mr-6">

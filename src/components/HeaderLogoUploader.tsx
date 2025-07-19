@@ -7,7 +7,7 @@ import { setDoc, doc } from "firebase/firestore";
 import { onAuthStateChanged } from "firebase/auth";
 import { auth, db, storage } from "@/lib/firebase";
 
-const SITE_KEY = "yotteya";
+const SITE_KEY = "test03";
 
 export default function HeaderLogoUploader() {
   const [file, setFile] = useState<File | null>(null);

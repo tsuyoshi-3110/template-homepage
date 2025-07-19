@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "メニュー一覧｜甘味処 よって屋",
     description:
       "ふんわり生地とこだわりクリームのクレープメニューをご紹介。大阪市〇〇区の人気クレープ店。",
-    url: "https://yotteya-homepage.vercel.app/products",
+    url: "https://test03-homepage.vercel.app/products",
     siteName: "甘味処 よって屋",
     images: [
       {

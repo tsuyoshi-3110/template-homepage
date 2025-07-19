@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: "甘味処 よって屋｜サクサク生地のクレープ専門店",
     description:
       "大阪市東淀川区・北区のクレープ専門店『甘味処 よって屋』。旬のフルーツを使った限定クレープやアイス、かき氷をご紹介。",
-    url: "https://yotteya.shop/",
+    url: "https://test03.shop/",
     siteName: "甘味処 よって屋",
     images: [
       {
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     locale: "ja_JP",
     type: "website",
   },
-  alternates: { canonical: "https://yotteya.shop/" },
+  alternates: { canonical: "https://test03.shop/" },
 };
 
 export default function HomePage() {
@@ -68,7 +68,7 @@ export default function HomePage() {
                 addressLocality: "大阪市東淀川区",
               },
               servesCuisine: "Crepe",
-              url: "https://yotteya.shop/",
+              url: "https://test03.shop/",
             },
             {
               "@context": "https://schema.org",
@@ -79,7 +79,7 @@ export default function HomePage() {
                 addressLocality: "大阪市北区",
               },
               servesCuisine: "Crepe",
-              url: "https://yotteya.shop/",
+              url: "https://test03.shop/",
             },
           ]),
         }}

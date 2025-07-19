@@ -16,7 +16,7 @@ export default function ForgotEmail({ onClose, onEmailFound }: Props) {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
-  const SITE_KEY = "yotteya";
+  const SITE_KEY = "test03";
 
   const handleSearch = async () => {
     setLoading(true);
@@ -53,7 +53,9 @@ export default function ForgotEmail({ onClose, onEmailFound }: Props) {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
       <div className="bg-white w-full max-w-md rounded-lg p-6 shadow-lg space-y-4">
-        <h2 className="text-xl font-bold text-center">メールアドレスを忘れた場合</h2>
+        <h2 className="text-xl font-bold text-center">
+          メールアドレスを忘れた場合
+        </h2>
         <p className="text-sm text-gray-600 text-center">
           登録済みの電話番号を入力してください。
         </p>

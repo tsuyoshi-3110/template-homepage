@@ -45,7 +45,7 @@ export default function NewsClient() {
   const nonEmptyKeywords = keywords.filter((k) => k.trim() !== "");
   const gradient = useThemeGradient();
 
-  const SITE_KEY = "yotteya";
+  const SITE_KEY = "test03";
 
   const colRef = useMemo(
     () => collection(db, "siteNews", SITE_KEY, "items"),

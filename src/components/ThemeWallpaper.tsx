@@ -8,7 +8,7 @@ import { getStorage, ref as storageRef, deleteObject } from "firebase/storage";
 import { doc, updateDoc, deleteField } from "firebase/firestore";
 import { Button } from "@/components/ui/button";
 
-const SITE_KEY = "yotteya";
+const SITE_KEY = "test03";
 
 export default function ThemeWallpaper({
   onFileSelect,

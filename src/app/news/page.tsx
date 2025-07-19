@@ -10,19 +10,21 @@ export const metadata: Metadata = {
     title: "お知らせ｜甘味処 よって屋",
     description:
       "甘味処 よって屋のお知らせ。新メニューや営業時間変更など最新情報を掲載。",
-    url: "https://yotteya.shop/news",
+    url: "https://test03.shop/news",
     siteName: "甘味処 よって屋",
     images: [{ url: "/ogp-news.jpg", width: 1200, height: 630 }],
     locale: "ja_JP",
     type: "website",
   },
-  alternates: { canonical: "https://yotteya.shop/news" },
+  alternates: { canonical: "https://test03.shop/news" },
 };
 
 export default function NewsPage() {
   return (
     <main className="px-4 py-12 max-w-4xl mx-auto">
-      <h1 className="text-3xl font-bold mt-6 mb-6 text-center text-white/80">お知らせ</h1>
+      <h1 className="text-3xl font-bold mt-6 mb-6 text-center text-white/80">
+        お知らせ
+      </h1>
       <NewsClient />
     </main>
   );

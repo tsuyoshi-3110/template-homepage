@@ -7,7 +7,7 @@ import { onAuthStateChanged } from "firebase/auth";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 
-const SITE_KEY = "yotteya";
+const SITE_KEY = "test03";
 const docRef = doc(db, "sitePages", SITE_KEY, "pages", "topMessage");
 
 type Msg = { title: string; body: string };
@@ -110,8 +110,14 @@ export default function TopFixedText() {
               className="border px-3 py-2 w-full text-black"
             />
             <div className="flex justify-center gap-2">
-              <Button onClick={handleSave} className="bg-blue-500">保存</Button>
-              <Button variant="outline" onClick={handleCancel} className="bg-gray-300">
+              <Button onClick={handleSave} className="bg-blue-500">
+                保存
+              </Button>
+              <Button
+                variant="outline"
+                onClick={handleCancel}
+                className="bg-gray-300"
+              >
                 キャンセル
               </Button>
             </div>
